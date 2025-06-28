@@ -1,0 +1,40 @@
+body {
+  background: #24353f !important;
+}
+h1 {
+  color: #17a2b8 !important;
+}
+input {
+  width: 100% !important;
+}
+.anima {
+  position: relative;
+  padding: 2px;
+  background: linear-gradient(270deg, #0fffc1, #7e0fff, #ff4c4c, #0fffc1);
+  background-size: 800% 800%;
+  animation: glowBorder 6s ease infinite;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.anima > .card-inner {
+  background-color: #24353f;
+  border-radius: 10px;
+  padding: 30px;
+  z-index: 2;
+  position: relative;
+  color: white;
+}
+
+/* الأنيميشن */
+@keyframes glowBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

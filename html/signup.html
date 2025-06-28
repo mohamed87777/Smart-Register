@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  </head>
+  <body>
+    <main class="py-5">
+      <div
+        class="container d-flex justify-content-center  align-items-center py-5 flex-column position-relative"
+      >
+        <div class="anima rounded-3 w-100 shadow-lg">
+          <div class="card-inner w-100">
+            <div class="caption text-center">
+              <h1 class="py-4">Smart Login System</h1>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <form>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingname"
+                      placeholder="Name"
+                    />
+                    <label for="floatingname">Enter Your Name</label>
+                    <div class="invalid-feedback">
+                      Name must be at least 3 characters long and only letters.
+                    </div>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingEmail"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingEmail">Enter Your Email</label>
+                    <div class="invalid-feedback">
+                      Please enter a valid Gmail address.
+                    </div>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="floatingPassword"
+                      placeholder="Password"
+                    />
+                    <label for="floatingPassword">Enter Password</label>
+                    <div class="invalid-feedback">
+                      Password must be at least 6 characters and contain only
+                      letters and numbers.
+                    </div>
+                  </div>
+
+                  <div id="message" class="mb-3"></div>
+
+                  <div class="mb-3 d-flex justify-content-center">
+                    <button
+                      type="button"
+                      id="signupbtn"
+                      class="btn btn-outline-info w-100"
+                    >
+                      Sign Up
+                    </button>
+                  </div>
+                </form>
+
+                <div class="signup text-center mt-3">
+                  <p class="text-white">
+                    You have an account?
+                    <a
+                      class="link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                      href="../index.html"
+                      >Signin</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
